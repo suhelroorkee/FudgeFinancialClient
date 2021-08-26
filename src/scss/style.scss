@@ -1,0 +1,114 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+@import "~@syncfusion/ej2-base/styles/material.css";
+@import "~@syncfusion/ej2-buttons/styles/material.css";
+@import "~@syncfusion/ej2-inputs/styles/material.css";
+@import "~@syncfusion/ej2-popups/styles/material.css";
+@import "~@syncfusion/ej2-lists/styles/material.css";
+@import "~@syncfusion/ej2-splitbuttons/styles/material.css";
+@import "~@syncfusion/ej2-calendars/styles/material.css";
+@import "~@syncfusion/ej2-angular-calendars/styles/material.css";
+
+// If you want to add something do it here
+@import "custom";
+.navbar-brand-full{
+    width: 100%;
+    height: 100%;    
+    width: 100% !important;
+}
+.cc_dialog.simple{
+    width: 100%!important;
+    max-width: 100%!important;
+    background: rgba(27,141,183,1)!important;
+}
+.cc_dialog_text {
+    font-size: 14px!important;
+    text-align: center;
+}
+.cc_dialog {
+    padding: 1rem 3rem !important;
+}
+.cc_b_ok{
+    float: right;
+    background: rgb(4, 170, 157) !important;
+    color: #fff!important;
+}
+.cc_b_cp{
+    float: right;
+}
+.dark.cc_dialog button.cc_b_ok {
+    margin-left: 0.25rem !important;
+}
+.cc_b_ok1 {
+    display: none;
+}
+.textL{
+    width: 55%;
+    float: left;
+    line-height: 2;
+}
+.textR {    
+    float: left;
+}
+.cc_dialog_headline{
+    width: 17%;
+    height: 1px;
+    float: left;
+    display: block;
+}
+.select2-selection__rendered {
+    line-height: 32px !important;
+  }  
+.select2-selection {
+    height: 35px !important;
+    border-radius: 0!important;
+  }
+  .select2{
+      width: 100%!important;
+  }
+  select {
+      width: 100%!important;
+  }  
+.ajs-header{
+    background-color: #062736 !important;
+    color:rgb(4, 170, 157) !important; 
+}
+.ajs-button {
+    background-color: rgb(4, 170, 157) !important;
+    color : #ffffff!important;
+    font-weight: bold;
+    border-radius: 0px;
+    border: rgb(4, 170, 157);
+}
+.dt-buttons {
+    padding: 15px 30px;
+}
+app-sidebar-nav-dropdown.nav-item.nav-dropdown.open1.open > a {
+    background: #84d5cf !important;
+}
+.select2-search__field {
+    width: 100%!important;
+}
+#ngsel > .select2  >.selection > .select2-selection {
+    height: auto!important;    
+}
+@media (max-width: 850px) {
+    .navbar-brand-full {
+        display: none;
+    }
+    .textL {
+        width: 98%;
+    }
+    .cc_dialog_text {
+        margin: 0px;
+    }
+    .cc_css_reboot {
+        padding: 6px 0px 0px 0px!important;
+    }
+    .logform {
+        margin-bottom: 100px;
+    }
+}

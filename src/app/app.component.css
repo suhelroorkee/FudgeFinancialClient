@@ -1,0 +1,11 @@
+.app-header {
+    background-color: #21355C !important;
+}
+.header-fixed .app-header {
+    position: fixed;
+    z-index: 1020!important;
+    width: 100%;
+}
+.app-header.app-header.navbar{
+background: red;
+}

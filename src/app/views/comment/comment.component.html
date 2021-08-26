@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-sm-12 mt-4">
+                <div class="card" *ngFor="let comment of comments; let i = index">
+                    <div class="card-header row" style="margin: 0;"> 
+                        <div class="col-sm-12">                            
+                            <div class="avatar" style="float: left;margin-right: 20px;">
+                                <img src="assets/images/User.png" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>  
+                            <div>                              
+                            <div class="small text-muted">{{comment.user_id[0].username}} | {{comment.created_at | date:'MMM d, y, h:mm a'}}</div> 
+                            </div>                              
+                        </div>                             
+                    </div>
+                    <div class="card-body">{{comment.body}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

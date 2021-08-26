@@ -1,0 +1,48 @@
+body{
+    font-family: Helvetica Neue;
+}
+.btnalign {
+    float: right;
+    font-size: 13px;
+    padding: 5px;
+}
+input {
+    height: 51px;
+    width: 100%;
+}
+.card-group{
+    opacity: .9;
+}
+a {    
+    width: 200px;
+    font-weight: bold!important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media (max-width: 991.98px) {
+    .card {
+        width: 100%!important;
+        padding: 0px!important;
+        flex: none!important;
+    }
+    .card-body {
+        padding: 10px!important;
+    }
+    .bgimage{
+        width:71%!important;
+        float:left;
+        margin: 5px 0px!important;
+
+    }
+    .banner-head {
+        font-size: 133%;
+    }
+     
+}

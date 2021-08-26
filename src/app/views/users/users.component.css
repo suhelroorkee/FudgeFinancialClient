@@ -1,0 +1,19 @@
+label {
+    width: 78px;
+}
+input, select {
+    border: 1px solid #b3acac;
+    border-radius: 3px;
+}
+button {
+    background-image:  linear-gradient(#28653df2, #295639) !important;
+    border: #28653df2;
+    color: #fff;
+    border-radius: 0px;
+}
+.close {
+    background: transparent!important;
+}
+select {
+    width: 50%!important;
+}

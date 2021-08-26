@@ -1,0 +1,135 @@
+// Here you can add other styles
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#layoutAuthentication {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.bgimage1 {
+    width: 100%;
+}
+.bannercard {
+    height: 95%;
+}
+.app-header{
+background: #FFFFFF 0% 0% no-repeat padding-box!important;
+border-bottom: none!important;
+}
+.navbar-brand {
+    background-image: linear-gradient(#003B14D9, #023614);
+}
+.sidebar-nav > .nav {
+    background-image: linear-gradient(#003B14D9, #023614);
+}
+.app-header .navbar-brand {   
+    width: 200px;
+}
+.modal-header {
+    background: linear-gradient(#28653dfc, #023614)!important;
+}
+.modal-title {
+    color: #fff!important;
+}
+.message {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+    overflow: visible;
+}
+.modal-content {
+    border-color: #062736!important;
+}
+.btn-square {
+    background-image: linear-gradient(#28653df2, #295639) !important;
+    border: #28653df2;
+    color: #fff;
+    border-radius: 0px;
+}
+.bgimage {
+    width: 8%;
+}
+.app-footer {
+    background-color: #d8d8d8;
+}
+a {
+    display: inline-block!important;
+    vertical-align: baseline!important;
+    font-weight: 300!important;
+}
+.nav-item > a {
+    width: 100%!important;
+}
+a :hover {
+    color: #fff!important;
+}
+.sidebar .nav-dropdown.open .nav-link {
+    color: #fff!important;
+    border-left: 0;
+}
+.sidebar .nav-link .nav-icon {
+    color: #fff!important;
+}
+.navbar-brand-full {
+    height: 37px!important;
+    opacity: 1; 
+    margin-top: 7px;
+}
+.sidebar .nav-link:hover {
+    color: #fff!important;
+}
+.sidebar .nav-link:hover {
+    background: linear-gradient(#28653dfc, #023614)!important;
+}
+.sidebar {
+    background: linear-gradient(#28653dfc, #023614)!important;
+}
+.sidebar .nav-link.active {
+    background: linear-gradient(#28653df2, #295639) !important;
+    color: #fff!important;
+}
+.sidebar .nav-link.active .nav-icon {
+    color: #fff!important;
+}
+.dropdown-header.text-center {
+    background-image:  linear-gradient(#28653df2, #295639) !important;
+    color: #fff;
+}
+.dropdown-item{
+    color: #062736!important;
+}
+i {    
+    color: #062736!important;
+}
+.icon-people {
+    color: #fff!important;
+}
+main{
+    background-color: #fff;
+}
+th { 
+    background: linear-gradient(#28653df2, #295639) !important;
+    color: #fff!important;
+}
+.tablecard {
+    overflow-x: auto;
+}
+button.navbar-toggler.d-none.d-lg-block {
+    display: none!important;
+}
+@media (max-width: 850px) {
+    .navbar-nav {
+        margin: 0!Important;
+        
+    }
+    .navbar-brand {
+        display: none!important;
+    }
+}

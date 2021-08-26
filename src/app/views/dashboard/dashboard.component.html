@@ -1,0 +1,223 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <div class="row">
+        <b class="col-sm-12 col-lg-12 mb-3">Quick Stats</b>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bannercard" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+            <div class="card-body pb-0">
+              <div class="text-value">&#163;563,350</div>
+              <div>your net worth as of today</div>
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bannercard" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+            <div class="card-body pb-0">
+              <div class="text-value">&#163;12,430</div>
+              <div>Monthly Cashflow</div>
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bannercard" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+            <div class="card-body pb-0">
+              <div class="text-value">&#163;161,430</div>
+              <div>Overall Liabilities</div>
+            </div>
+          </div>
+        </div><!--/.col-->
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+      <div class="row">
+      <b class="col-sm-12 col-lg-12">My Financial Health</b>
+      <div class="col-sm-12 col-lg-12">
+        <div class="card mt-3" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+          <div class="card-body" style="padding: 0 24px;">
+            <div class="clearfix">
+                       <div class="float-left">
+                         <small style="color: red!important;"  class="text-muted"><b>Poor</b></small>
+                       </div>
+                       <div class="text-center">
+                        <small style="color: #c69500!important;"  class="text-muted"><b>Poor</b></small>
+                      </div>
+                       <div class="float-right">
+                         <small style="color: green!important;" class="text-muted"><b>Good</b></small>
+                       </div>
+                     </div>
+                     <div class="progress progress-xs">
+                       <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="43" class="progress-bar bg-success" role="progressbar" style="width: 43%"></div>
+                     </div>                   
+                     <div class="float-left">
+                      <strong>43%</strong>
+                    </div>
+           </div>
+           <div class="card-footer" style="background: #fff;padding: 0;">
+            Your financial health status is <span style="color: green;"><b>GOOD</b></span>. However there’s still room for improvement. <a href="">See how you can improve</a>
+           </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-6 col-lg-6">
+      <div class="card" style="border:none;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <h4 class="card-title mb-0"><b>My Performance</b></h4>
+              <div class="small text-muted">November 2017</div>
+            </div><!--/.col-->
+            <div class="col-sm-7 d-none d-md-block">
+              <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
+              <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Day</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Month</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Year" id="option3">Year</label>
+              </div>
+            </div><!--/.col-->
+          </div><!--/.row-->
+          <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+            <canvas baseChart class="chart"
+            [datasets]="mainChartData"
+            [labels]="mainChartLabels"
+            [options]="mainChartOptions"
+            [colors]="mainChartColours"
+            [legend]="mainChartLegend"
+            [chartType]="mainChartType"></canvas>
+          </div>
+        </div>
+        <div class="card-footer" style="border: none; background: #fff;">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md mb-sm-2 mb-0">
+              <div class="text-muted">Expenses</div>
+              <!-- <strong>22.123 Users (80%)</strong> -->
+              <div class="progress progress-xs mt-2">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md mb-sm-2 mb-0">
+              <div class="text-muted">Net worth</div>
+              <!-- <strong>40.15%</strong> -->
+              <div class="progress progress-xs mt-2">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6">
+      
+  <div class="row">
+    <div class="col-sm-6 col-lg-4">
+      <div class="card" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+        <div class="card-body">
+          <img  src="/assets/img/brand/tab.PNG" class="bgimage1" />  
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-4">
+      <div class="card" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+        <div class="card-body">
+          <img  src="/assets/img/brand/tab.PNG" class="bgimage1" />  
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-4">
+      <div class="card" style="padding: 10px;box-shadow: 5px 0px 9px 7px #0b0b0b24">
+        <div class="card-body">
+          <img  src="/assets/img/brand/tab.PNG" class="bgimage1" />  
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+    </div>
+  </div>
+  <!--/.card-->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <b>Industry &amp; News</b>
+        </div>
+        <div class="card-body">
+            <div class="p-3">
+              <div class="message" *ngFor="let post of posts; let i = index">
+                <div class="py-3 mr-3 float-left">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com" class="img-avatar">
+                      <span class="avatar-status badge-success"></span>
+                    </div>
+                </div>
+                <div>
+                    <small class="text-muted"><b>{{post.user_id[0].firstname}} {{post.user_id[0].lastname}}</b></small>
+                    <small class="text-muted float-right mt-1">{{post.created_at | date:'MMM d, y, h:mm a'}}</small>
+                </div>
+                <div class="text-truncate font-weight-bold mt-1">{{post.name}}</div>
+                <small class="text-muted mt-2">{{post.body}}</small>
+              </div>
+              <hr>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <b>Top &amp; Comments</b>
+        </div>
+        <div class="card-body">
+            <div class="p-3">
+              <div class="message" *ngFor="let comment of comments; let i = index">
+                <div class="py-3 mr-3 float-left">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/7.jpg" alt="admin@bootstrapmaster.com" class="img-avatar">
+                      <span class="avatar-status badge-success"></span>
+                    </div>
+                </div>
+                <div>
+                    <small class="text-muted"><b>{{comment.user_id[0].firstname}} {{comment.user_id[0].lastname}}</b></small>
+                    <br>
+                    <small class="text-muted">{{comment.created_at | date:'h:mm a'}}</small>
+                </div>
+                <small class="text-muted mt-2">{{comment.body}}</small>
+              </div>
+              <hr>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <b>Users</b>
+        </div>
+        <div class="card-body">
+          <br>
+          <table class="table table-responsive-sm table-hover table-outline mb-0" style="border: none;">
+            <tbody>
+              <tr *ngFor="let user of users; let i = index">
+                <td class="text-center">
+                  <div class="avatar">
+                    <img src="assets/img/avatars/{{i+1}}.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <span class="avatar-status badge-success"></span>
+                  </div>
+                </td>
+                <td>
+                  <div><b>{{user.firstname}} {{user.lastname}}</b></div>
+                  <div class="small text-muted">
+                    <span>New</span> | Registered: {{user.created_at | date:'MMM d, y, h:mm a'}}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+</div>
+

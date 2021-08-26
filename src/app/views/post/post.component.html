@@ -1,0 +1,102 @@
+<div class="container-fluid">
+        <div class="animated fadeIn">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-square mr-1" style="float: right;" data-toggle="modal" (click)="infoModal.show()">
+                        Add Post
+                      </button>
+                </div>
+                <div class="col-sm-12 mt-4">
+                    <div class="card" *ngFor="let post of posts; let i = index">
+                        <div class="card-header row" style="margin: 0;"> 
+                            <div class="col-sm-12">                            
+                                <div class="avatar" style="float: left;margin-right: 20px;">
+                                    <img src="assets/images/User.png" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-success"></span>
+                                </div>  
+                                <div>
+                                    <h4 class="qcont">{{post.name}}</h4> <br>                                
+                                    <div div class="small text-muted">{{post.user_id[0].username}} | {{post.created_at | date:'MMM d, y, h:mm a'}}</div> 
+                                </div>                              
+                            </div>                             
+                        </div>
+                        <div class="card-body qcont">{{post.body}}</div>
+                        <div class="commentbox">
+                        <h4>Comments</h4>
+                        <div *ngFor="let  comment of post.comments; let i = index">
+                          <div class="message1">
+                            <div class="py-3 mr-3 float-left">
+                              <div class="avatar">
+                                <img alt="admin@bootstrapmaster.com" class="img-avatar" src="assets/img/avatars/7.jpg">
+                                  <span class="avatar-status badge-success"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">{{comment.user_id[0].username}}</small>
+                                <small class="text-muted float-right mt-1">{{comment.created_at | date:'MMM d, y, h:mm a'}}</small>
+                            </div>
+                            <small class="text-muted mt-2">{{comment.body}}</small>
+                          </div>
+                          <hr>
+                        </div>
+                          <textarea type="text" id="comment_{{post._id}}" name="comment" class="mb-1 form-control" placeholder="Write Comment"></textarea>                          
+                          <button type="submit" (click)="comment(post._id)" class="mb-4 btn btn-sm btn-square float-right" style="padding: 8px 14px;color: #fff;">Save</button>                     
+                          <select class="form-control float-right mr-4" id="select_{{post._id}}" name="user_id" style="width: 20%!important;">
+                            <option disabled selected="selected" [value]="0">Select User</option>
+                            <option *ngFor="let user of users; let i = index" [value]="user._id">                    
+                              {{user.username}}
+                            </option>
+                          </select>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div bsModal #infoModal="bs-modal" class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-info" role="document">
+          <form  #requestForm="ngForm" (ngSubmit)="register()">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Add Post</h4>
+                <button type="button" class="close" (click)="infoModal.hide()" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">          
+              <div class="card">
+                  <div class="card-body">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <label style="padding: 7px;width: 20%">name</label>
+                          <input type="text" id="name" name="name" [(ngModel)]="model.name"  class="form-control" placeholder="name">               
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <label style="padding: 7px;width: 20%">body</label>
+                          <textarea type="text" id="body" name="body" [(ngModel)]="model.body"  class="form-control" placeholder="body"></textarea>
+                        </div>
+                      </div>       
+                      <div class="form-group">
+                        <div class="input-group">
+                          <label style="padding: 7px;width: 20%" for="exampleSelect1">Posted By</label>
+                          <select class="form-control" id="id" name="user_id" [(ngModel)]="model._id" style="width: 80%!important;">
+                            <option disabled selected="selected" [value]="0">Select User</option>
+                            <option *ngFor="let user of users; let i = index" [value]="user._id">                    
+                              {{user.username}}
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-square" (click)="infoModal.hide()">Close</button>        
+                <button type="submit" class="btn btn-sm btn-square">Submit</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </form>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
