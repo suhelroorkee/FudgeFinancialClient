@@ -3,6 +3,7 @@ import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { User } from '../../_models/user';
 import { Post } from '../../_models/Post';
+import { Comment } from '../../_models/Comment';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { PostService } from '../../_services/post.service';
