@@ -1,7 +1,6 @@
 <h1 align="center">Angular - Client Fudge Financial.</h1>
 
 <p align="center">
-  <img src="aio/src/assets/images/logos/angular/angular.png" alt="angular-logo" width="120px" height="120px"/>
   <br>
   <i>Client Fudge Financial web applications  
     <br>  using Angular 11, Typescript/JavaScript and other languages.</i>
